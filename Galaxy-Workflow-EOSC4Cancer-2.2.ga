@@ -3,7 +3,7 @@
     "annotation": "",
     "comments": [],
     "format-version": "0.1",
-    "name": "Test",
+    "name": "Test (imported from uploaded file)",
     "report": {
         "markdown": "\n# Workflow Execution Report\n\n## Workflow Inputs\n```galaxy\ninvocation_inputs()\n```\n\n## Workflow Outputs\n```galaxy\ninvocation_outputs()\n```\n\n## Workflow\n```galaxy\nworkflow_display()\n```\n"
     },
@@ -33,7 +33,7 @@
             ],
             "position": {
                 "left": 0,
-                "top": 0.0
+                "top": 0
             },
             "post_job_actions": {},
             "tool_id": "xnat_download",
@@ -65,8 +65,8 @@
                 }
             ],
             "position": {
-                "left": 386.2342364196165,
-                "top": 30.183862937761567
+                "left": 386.2187623670273,
+                "top": 30.171859222648
             },
             "post_job_actions": {},
             "tool_id": "convolution_2d",
@@ -76,9 +76,42 @@
             "uuid": "95479db1-9b23-427e-8fd1-958cbdcb46ae",
             "when": null,
             "workflow_outputs": []
+        },
+        "2": {
+            "annotation": "",
+            "content_id": "xnat_upload",
+            "errors": null,
+            "id": 2,
+            "input_connections": {
+                "data": {
+                    "id": 1,
+                    "output_name": "list_output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool XNAT data exporter",
+                    "name": "data"
+                }
+            ],
+            "label": null,
+            "name": "XNAT data exporter",
+            "outputs": [],
+            "position": {
+                "left": 749.8379277107248,
+                "top": 15.19121434631801
+            },
+            "post_job_actions": {},
+            "tool_id": "xnat_upload",
+            "tool_state": "{\"data\": {\"__class__\": \"RuntimeValue\"}, \"experiment\": \"10-31-1998-NA-CT-ABDOMEN-W-CO-53300\", \"project\": \"EOSC4Cancer_TCGA_COAD\", \"resource\": \"DICOM collection\", \"scan\": \"^(?!.*Topogram).*\", \"subject\": \"TCGA-CK-4951\", \"__page__\": 0, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.1.3+galaxy0",
+            "type": "tool",
+            "uuid": "5e9d4b7a-e54f-4244-b35f-8db33fe2ed6f",
+            "when": null,
+            "workflow_outputs": []
         }
     },
     "tags": [],
-    "uuid": "53a19cb1-c18f-4e6d-b77e-f5493473110f",
-    "version": 2
+    "uuid": "ba42c516-cbde-4229-a2aa-669db409ca4d",
+    "version": 4
 }
